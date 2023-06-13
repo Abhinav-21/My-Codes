@@ -1,0 +1,75 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Leetcode",
+      "request": "launch",
+      "mainClass": "Leetcode",
+      "projectName": "Coding and all_43496a61"
+    },
+    {
+      "type": "java",
+      "name": "Launch VANDH",
+      "request": "launch",
+      "mainClass": "VANDH",
+      "projectName": "Coding and all_43496a61"
+    },
+    {
+      "type": "java",
+      "name": "Launch Codechef",
+      "request": "launch",
+      "mainClass": "Codechef",
+      "projectName": "Coding and all_43496a61"
+    },
+    {
+      "type": "java",
+      "name": "Launch OOPs",
+      "request": "launch",
+      "mainClass": "OOPs",
+      "projectName": "Coding and all_43496a61"
+    },
+    {
+      "type": "java",
+      "name": "Launch Hello",
+      "request": "launch",
+      "mainClass": "Hello",
+      "projectName": "Coding and all_43496a61"
+    },
+    {
+      "type": "java",
+      "name": "Launch Helloo",
+      "request": "launch",
+      "mainClass": "Helloo",
+      "projectName": "Coding and all_43496a61"
+    },
+    {
+      "type": "java",
+      "name": "Launch Helloo",
+      "request": "launch",
+      "mainClass": "Helloo",
+      "projectName": "HTML_c6e7578a"
+    },
+    {
+      "type": "java",
+      "name": "Launch Hello",
+      "request": "launch",
+      "mainClass": "Hello",
+      "projectName": "HTML_c6e7578a"
+    },
+    {
+      "name": "(Windows) Launch",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "enter program name, for example ${workspaceFolder}/a.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false
+    }
+  ]
+}
