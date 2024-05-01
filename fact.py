@@ -10,3 +10,4 @@ print(num)
 for k in range(1, 221):
     if sqrt(num / fact(k)) % 1 == 0:
         print(k, "! is to be removed", sep="")
+ 

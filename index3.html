@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Learning WD</title>
+	<!-- <link rel="stylesheet" href="style.css"> -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+	<style>
+		.subhead {
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			text-align: justify;
+			color: royalblue;
+			font-size: x-large;
+			text-shadow: darkblue 1px 1px 1px;
+			font-size: 30px;
+		}
+
+		.head {
+			font-family: 'Prompt';
+			text-align: left;
+			color: royalblue;
+			text-shadow: gray;
+			font-size: xxx-large;
+			text-shadow: darkblue 2px 2px 2px;
+		}
+
+		p,
+		label {
+			font-family: 'Source Code Pro',
+				'Lucida Sans',
+				'Lucida Sans Regular',
+				'Lucida Grande',
+				'Lucida Sans Unicode',
+				Geneva,
+				Verdana,
+				sans-serif;
+			font-stretch: expanded;
+			font-size: 17px;
+			font-weight: bolder;
+		}
+
+		body {
+			background-image: url(bg.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+
+		form {
+			background-color: rgb(219, 234, 236);
+			border-radius: 1cm;
+			border: 80px solid rgb(148, 209, 233);
+			border-style: double;
+			margin: 1in 2.5in 2.5in 2.5in;
+			padding: 1.3cm 1.3in 1.3in 1.3in;
+		}
+
+		p.gender {
+			margin: 0.5cm;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="number"],
+		textarea,
+		select {
+			width: 80%;
+			padding: 10px;
+			border: 1px solid black;
+			border-radius: 0.05in;
+		}
+
+		input[type="radio"] {
+			margin-right: 5%;
+			cursor: pointer;
+		}
+
+		input[type="month"],
+		input[type="password"] {
+			border: 1px solid black;
+			border-radius: 0.05in;
+			margin: 5px;
+		}
+
+		.exp_cvv {
+			margin-bottom: 0in;
+			font-family: "Source Code Pro";
+			font-stretch: expanded;
+			font-size: 17px;
+			font-weight: bolder;
+		}
+
+		input[type="month"] {
+			cursor: text;
+		}
+
+		input[type="submit"] {
+			width: 34%;
+			height: 50px;
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			font-size: 27px;
+			color: rgba(0, 0, 0, 0.7);
+			background-color: rgb(197, 252, 235);
+			margin-top: 0.5in;
+			margin-left: 1.5in;
+			text-align: center;
+			border-radius: 2in;
+			border-style: ridge;
+			cursor: pointer;
+			transition: 0.2s linear;
+		}
+
+		input[type="submit"]:hover {
+			background-color: rgb(6, 250, 238);
+		}
+
+		.rupee {
+			width: 6%;
+			position: relative;
+			top: 340px;
+			left: 845px;
+			transition: all 1s;
+		}
+
+		.rupee:hover {
+			transform: rotateY(360deg);
+		}
+	</style>
+</head>
+
+<body>
+	
+	<img src=rupee.png alt="rupee" class='rupee'>
+	<form>
+
+		<h1 class='head'>Payment window</h1>
+		<hr>
+		<h3 class='subhead'>Contact Information</h3>
+		<p> Full Name*: <input type="text" required></p>
+		<p>Gender*:</p>
+		<p class="gender">Male<input type="radio" name='gender' id='Male' required>Female<input type="radio"
+				name='gender' id='Female' required>Others<input type="radio" name='gender' id='Others' required></p>
+		<p>Address: <textarea name="" id="Address" cols=30 rows=3></textarea></p>
+		<p>Email*: <input type="email" name="email" id="email" required></p>
+		<p>Pin Code: <input type="number" name="pincode" id="pincode"></p>
+		<hr>
+		<h3 class='subhead'>Payment Information</h3>
+		<p>Select Card Type*:
+			<select class='cards'>
+				<option value='--Select Card Type--' required> --Select Card Type-- </option>
+				<option value='Maestro' required> Maestro </option>
+				<option value='Master Card' required> Master Card </option>
+				<option value='Visa' required> Visa </option>
+				<option value='Rupay' required> Rupay </option>
+			</select>
+		</p>
+		<p> Card Number*: <input type="number" name="card_number" id="card_number" required></p>
+		<CVV*: class="exp_cvv"> Expiry Date*: &nbsp &nbsp&nbsp CVV*:</p>
+
+			<input type="month" name="exp_date" id="exp_date" required>
+			<input type="password" name="cvv" id="cvv" required>
+			<p><input type="submit" value="Pay Now"></p>
+	</form>
+</body>
+
+</html>

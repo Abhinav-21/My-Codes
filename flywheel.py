@@ -19,3 +19,4 @@ while total > 0:
 
 inertia = inertia_sum / tot
 print("The moment of inertia is:", inertia, "kg.m^2")
+

@@ -1,20 +1,26 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+int solve(int n)
+{
+   int nearestPerfectSquare = std::ceil(std::sqrt(n));
+   int operations = 0;
+
+   if (nearestPerfectSquare * nearestPerfectSquare == n)
+   {
+      return operations;
+   }
+
+   int diff1 = std::abs(nearestPerfectSquare * nearestPerfectSquare - n);
+   int diff2 = std::abs((nearestPerfectSquare - 1) * (nearestPerfectSquare - 1) - n);
+
+   operations = (diff1 < diff2) ? diff1 : diff2;
+
+   return operations;
+}
+
 int main()
 {
-   string num;
-   cin >> num;
-
-   for (long long i = 0; i < num.size() / 2; i++)
-   {
-      if (num[i] != num[num.size() - i - 1])
-      {
-         cout << 0;
-         return 0;
-      }
-   }
-   cout << 1;
-
+   cout << solve(40);
    return 0;
 }

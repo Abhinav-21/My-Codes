@@ -4,7 +4,7 @@ data = dict()
 data2 = dict()
 count = 0
 for i in range(1, 15):
-    filename = str(i) + ".xlsx"
+    filename = "/suppli/" + str(i) + ".xlsx"
     file = pd.read_excel(filename)
     for j in file["Tables Name__3"]:
         count += 1

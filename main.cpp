@@ -1,44 +1,21 @@
 #include <bits/stdc++.h>
-
 using namespace std;
 
 int main()
 {
-    int m, n;
-    cin >> m >> n;
-    int a[m][n];
-    vector<pair<int, int>> p;
-    for (int i = 0; i < m; i++)
+    int n;
+    cin >> n;
+    vector<int> arr(n), arr1(n);
+    for (int i = 0; i < n; ++i)
+        cin >> arr[i];
+    arr1 = arr;
+    sort(arr.begin(), arr.end());
+    int ans = 0;
+    for (int i = 0; i < n; ++i)
     {
-        for (int j = 0; j < n; j++)
-        {
-
-            cin >> a[i][j];
-            if (a[i][j] == 0)
-            {
-                p.push_back({i, j});
-            }
-        }
-        for (int f = 0; i < p.size(); f++)
-        {
-            for (int i = 0; i < m; i++)
-            {
-                for (int j = 0; j < n; j++)
-                {
-                    if (p[f].first == i || p[f].second == j)
-                        a[i][j] = 0;
-                }
-            }
-        }
+        if (arr[i] != arr1[i])
+            ans++;
     }
-    for (int i = 0; i < m; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
-            cout << a[i][j] << " ";
-        }
-        cout << endl;
-    }
-
+    cout << ans / 2 << endl;
     return 0;
 }

@@ -1,14 +1,15 @@
 #include <stdio.h>
-#include <math.h>
 
-int main()
-
+int main(int argc, char const *argv[])
 {
-    int array[1000];
-    for (int i = 0; i < 2000; i++)
-    {
-        printf("%d ", array[i]);
+    if (argc == 2) {
+        printf("%s\n",argv[1]);
     }
-
+    else if (argc > 2) {
+        printf("Demo1\n");
+    }
+    else {
+        printf("Demo2\n");
+    }
     return 0;
 }
